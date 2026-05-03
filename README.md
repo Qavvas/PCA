@@ -30,5 +30,5 @@ To prevent unauthorized distribution, this application uses strict **HWID (Hardw
 ## 🌐 Community & Socials
 Want to purchase a key, get support, or stay up to date with my latest projects? Join the community and check out my socials below:
 
-* **Discord Server:** [Join the Community](https://discord.gg/THs9VxUwRE)
+* **Discord Server:** Currently Unavailable.
 * **YouTube:** [Plug's Channel](https://www.youtube.com/@pluglikescoding)
