@@ -16,7 +16,7 @@ Want to see what the new interface looks like? Check out the screenshot files up
 4. Upon launch, input your purchased License Key into the secure prompt.
 
 ## 🚨 Note
-**Important Note:** Because this tool interacts with networks and is a compiled executable, **Windows Defender or your antivirus may falsely flag it as malicious** (often as a "Trojan" or "Wacatac"). This is a false positive. You may need to add an exclusion for `PCA.exe` in your antivirus settings for it to launch successfully. Don't take my word for it, go onto virustotal and check it yourself. Four false-positives. It was flagged twice for "Malicious" with no direct reasoning. It was flagged twice for PyInstaller, because this is coded in python since I didn't want to spent hours coding in C#. It is also not flagged by any big-name corporations.
+**Important Note:** Because this tool interacts with networks and is a compiled executable, **Windows Defender or your antivirus may falsely flag it as malicious** (often as a "Trojan" or "Wacatac"). This is a false positive. You may need to add an exclusion for `PCA.exe` in your antivirus settings for it to launch successfully. I previously had this area boasting about how the only flags were false positives. However, I then notices a few vulnerabilities. Now, there are 9 false positives rather than 4, and Microsoft is one of them. This is because I used a tool known as PyArmor to obfuscate the code, which is a common tactic for malware. This is a necessary change.
 
 ## 🔒 Licensing & Security (Paid Access)
 **Please Note:** PCA is a **paid** premium software. 
