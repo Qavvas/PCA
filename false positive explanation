@@ -1,0 +1,28 @@
+Hello! I used AI to summarize the reasoning for the Antivirus flags. Here is why. Written by Gemini.
+
+## 🛡️ Security & Antivirus Notice
+
+When downloading or running **PCA**, you may receive a warning from Windows Defender or other antivirus software. This is a common occurrence with specialized Python-based tools and is what is known as a **False Positive**. 
+
+### Why is this happening?
+
+There are three primary technical reasons why security software may flag this executable:
+
+#### 1. PyInstaller Bundling (One-File Mode)
+To ensure the tool is "standalone" and requires no external dependencies or Python installation, we use a bundling process called **PyInstaller**. In `--onefile` mode, the application is compressed into a single binary. When launched, it extracts its components into a secure temporary directory to execute. Because this "self-extraction" behavior is also used by some types of unauthorized software, heuristic scanners often flag it as a precaution.
+
+#### 2. Code Protection & Obfuscation
+To protect the integrity of the application and prevent unauthorized modifications, the source code has been processed through a protection layer. This ensures that the internal logic remains secure. However, because antivirus engines cannot "read" the encrypted bytecode within the protected file, they may mark it as "suspicious" or "packed" simply because the internal contents are not transparent to the scanner.
+
+#### 3. Lack of EV Digital Signature
+Most antivirus software trusts applications that are signed with an **Extended Validation (EV) Certificate**. These certificates are typically only held by large corporations. As an independent project, our executable is "unsigned," which triggers a "Windows Protected your PC" (SmartScreen) warning by default.
+
+### Is it safe?
+Yes. **PCA** is a legitimate tool designed for its stated purpose. We value transparency and user trust:
+*   **Verification**: You are encouraged to run the executable in a sandbox environment (like Windows Sandbox or Any.Run) to monitor its behavior for yourself.
+*   **Minimal Permissions**: The tool only requests the permissions necessary to perform its core functions (e.g., network access for version checks).
+
+**How to run it:**
+If your antivirus blocks the file, you will need to add an exception (whitelist) for the `PCA.exe` file or the folder it is located in.
+
+It gave me this to put into README.md, which im not going to do because its already full.
